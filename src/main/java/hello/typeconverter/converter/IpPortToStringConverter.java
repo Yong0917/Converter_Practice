@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.convert.converter.Converter;
 
 @Slf4j
-public class IpPortToStringConverter implements Converter<IpPort, String> {
+public class IpPortToStringConverter implements Converter<IpPort, String> { //IPport 형식을 String 형식으로
     @Override
     public String convert(IpPort source) {
         log.info("convert source={}", source);
